@@ -25,7 +25,7 @@ The aws.json template supports 6 arguments :
     script_args: Pass in additional arguments to the script.
 ```
 
-Create a Primed Centos 7 AMI which includes container build provisioner :
+Create a Primed Centos 7 AMI which includes both the service and service container :
 
 ```
 packer build -var 'base_image=ami-c7d092f7' -var 'new_image=CentOS-7-x86_64 (Demo)' -var 'script=bootstrap.sh' -var 'access_key=12345674345456454' -var 'secret_key=erewrwrw2424esfsfdfwrwerwe2423wer' -var 'script_args=' aws.centos.json
