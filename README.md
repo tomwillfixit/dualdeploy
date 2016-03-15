@@ -8,7 +8,7 @@ Deploying the same service code in different formats.  In this example our servi
 
 ## Building a dual deployment environment using Packer
 
-The Packer template [aws.json](aws.json) is used to build a Amazon Machine Image. This image will be bootstrapped, our service will be installed as an RPM and our service container built. 
+The Packer template [aws.json](aws.centos.json) is used to build a Amazon Machine Image. This image will be bootstrapped, our service will be installed as an RPM and our service container built. 
 
 The bootstrap.sh can be as simple or complex as you need it to be.  We use it to install some helper tools and install Docker.
 
